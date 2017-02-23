@@ -26,6 +26,6 @@ The second questions we will be trying to answer while looking at donor Data set
 4.) What were the demographics of the donors?
 5.) Is there a pattern to donation amounts?
 
-Data Prokect 4: Movie Recommendation
+Data Project 4: Movie Recommendation
 
 In this prject we use item based collaborative filtering to find similarities between movies and recommend top ten best movies for an assumed user who rated some specific movies. We use database from MovieLens for this project.
