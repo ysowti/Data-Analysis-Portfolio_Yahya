@@ -1,6 +1,6 @@
-## Data-Analysis-Portfolio_Yahya
+# Data-Analysis-Portfolio_Yahya
 
-# Data Analysis Projects
+## Data Analysis Projects
 
 Data Analysis Project 1: Stock Market Analysis
 
@@ -34,7 +34,7 @@ The second set of questions I am trying to answer while looking at donor Data se
 4) What were the demographics of the donors?
 5) Is there a pattern to donation amounts?
 
-# Cardiologists Detection Problem
+## Cardiologists Detection Problem
 
 Detect Cardiologists
 
@@ -53,8 +53,8 @@ Detect_Cardiologists_Random_Forest:
 
 In solution 2 I use procedure code column and use Random Forest classifier to classify physicians and do a thorough evaluation of the model based on cross validation, precision/recall trade-off as well as AUC.
 
-# Diagnosis Problem
+## Diagnosis Problem
 
-# NLP Project
+## NLP Project
 
 
