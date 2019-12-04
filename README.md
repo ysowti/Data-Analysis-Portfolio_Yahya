@@ -45,11 +45,11 @@ The goal is that using this procedure data, determine how many of the doctors wi
 
 I answer this question using two techniques:
 
-### Detect_Cardiologists_Naive_Bayesian:
+### Detect Cardiologists using Naive Bayesian classification:
 
 In solution 1, I use natural language processing to mine information in procedure column and classify physicians to cardiologists and non-cardiologists based on Naive Bayesian Classifier.
 
-### Detect_Cardiologists_Random_Forest:
+### Detect Cardiologists using Random Forest classification:
 
 In solution 2 I use procedure code column and use Random Forest classifier to classify physicians and do a thorough evaluation of the model based on cross validation, precision/recall trade-off as well as AUC.
 
