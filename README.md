@@ -2,37 +2,14 @@
 
 ## Data Analysis Projects
 
-Data Analysis Project 1: Stock Market Analysis
+### Stock Market Analysis
 
-In this portfolio project I look at data from the stock market, particularly some technology stocks. I use pandas to get stock information, visualize different aspects of it, and finally look at a few ways of analyzing the risk of a stock, based on its previous performance history. I also predict future stock prices through a Monte Carlo method!
-I am answering the following questions along the way:
+In this portfolio project I look at data from the stock market, particularly some technology stocks. I use pandas to get stock information, visualize different aspects of it, and finally look at a few ways of analyzing the risk of a stock, based on its previous performance history. I also predict future stock prices through a Monte Carlo method.
 
-1) What was the change in price of the stock over time? 
-2) What was the daily return of the stock on average? 
-3) What was the moving average of the various stocks? 
-4) What was the correlation between different stocks' closing prices? 
-5) How much value do we put at risk by investing in a particular stock?
-6) How can we attempt to predict future stock behavior?
+### 2016 Presidential Election Data Analysis
 
-Data Analysis Project 2: 2016 Presidential Election Data Analysis
+In this data analysis project I am looking at data from 2016 election and analyze two datasets. The first dataset I analyze is the results of aggregated political polls to answer some questions like the party affiliation of people being polled, the effect of undecided polls, change of polls sentiment over time and the effect of debates on polls. The second dataset I use is donors dataset to statistically analyze the donation amount and see how it differs between candidates and parties, trying to find demographics of donors and to find patters in donation amounts.
 
-In this Data Project I am looking at data from the 2016 election.
-In this project, I analyze two datasets. The first data set is the results of political polls. I analyze this aggregated poll data and answer some questions: 
-
-1) Who was being polled and what was their party affiliation? 
-2) Did the poll results favor Clinton or Trump? 
-3) How do undecided voters effect the poll? 
-4) Can we account for the undecided voters? 
-5) How did voter sentiment change over time? 
-6) Can we see an effect in the polls from the debates?
-
-The second set of questions I am trying to answer while looking at donor Data set is:
-
-1) How much was donated and what was the average donation?
-2) How did the donations differ between candidates?
-3) How did the donations differ between Democrats and Republicans?
-4) What were the demographics of the donors?
-5) Is there a pattern to donation amounts?
 
 ## Cardiologists Detection Problem
 
@@ -52,6 +29,7 @@ In solution 1, I use natural language processing to mine information in procedur
 ### Detect Cardiologists using Random Forest classification:
 
 In solution 2 I use procedure code column and use Random Forest classifier to classify physicians and do a thorough evaluation of the model based on cross validation, precision/recall trade-off as well as AUC.
+
 
 ## Diagnosis Problem
 
