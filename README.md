@@ -1,6 +1,6 @@
 # Data Science Portfolio
 
-## Data Analysis Projects
+## 1 - Data Analysis Projects
 
 ### Stock Market Analysis
 
@@ -11,7 +11,7 @@ In this portfolio project I look at data from the stock market, particularly som
 In this data analysis project I am looking at data from 2016 election and analyze two datasets. The first dataset I analyze is the results of aggregated political polls to answer some questions like the party affiliation of people being polled, the effect of undecided polls, change of polls sentiment over time and the effect of debates on polls. The second dataset I use is donors dataset to statistically analyze the donation amount and see how it differs between candidates and parties, trying to find demographics of donors and to find patters in donation amounts.
 
 
-## Cardiologists Detection Problem
+## 2 - Cardiologists Detection Problem
 
 Detect Cardiologists
 
@@ -31,7 +31,7 @@ In solution 1, I use natural language processing to mine information in procedur
 In solution 2 I use procedure code column and use Random Forest classifier to classify physicians and do a thorough evaluation of the model based on cross validation, precision/recall trade-off as well as AUC.
 
 
-## Diagnosis Problem
+## 3 - Diagnosis Problem
 
 In this problem, the goal is to build a ML model that predicts diagnosis based on symptoms and other factors. As input csv file we have data_challenge.csv that contains a number of medical cases (extracted from EHRs). Each entry consists of:
 
@@ -44,7 +44,7 @@ I solve this problem using two different techniques:
 
 ### Diagnosis prediction using NN:
 
-In this solution I used Keras and deep learning to solve the multi-class classification problem and used sample weight capability of Keras in order to have a model that performs more evenly across different classes in order to deal with unbalance dataset.
+In this solution I used Keras and deep learning to solve the multi-class classification problem and used sample weight capability of Keras in order to have a model that performs more evenly across different classes in order to deal with imbalanced dataset.
 
 ### Diagnosis prediction using XGB:
 
