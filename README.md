@@ -22,7 +22,7 @@ The goal is that using this procedure data, determine how many of the doctors wi
 
 I answer this question using two techniques:
 
-### Detect Cardiologists using Naive Bayesian classification:
+### Detect Cardiologists using NLP:
 
 In solution 1, I use natural language processing to mine information in procedure column and classify physicians to cardiologists and non-cardiologists based on Naive Bayesian Classifier.
 
@@ -32,6 +32,23 @@ In solution 2 I use procedure code column and use Random Forest classifier to cl
 
 
 ## Diagnosis Problem
+
+In this problem, the goal is to build a ML model that predicts diagnosis based on symptoms and other factors. As input csv file we have data_challenge.csv that contains a number of medical cases (extracted from EHRs). Each entry consists of:
+
+- one or more “present” symptoms (symptoms that patient had at the time of visit). For example s_0136 is the code for “earache”.
+- one or more “absent” symptoms (symptoms that patient did not have). Note that there may be other potential symptoms the patient was never asked about, which are neither “present” nor “absent”
+- Age, Sex (1=Male), and Month of visit (which may be helpful, e.g. some conditions are gender-specific, some are seasonal).
+- Diagnosis (“DX”) the patient was diagnosed with (using Gyant condition codes)
+
+I solve this problem using two different techniques:
+
+### Diagnosis prediction using NN:
+
+In this solution I used Keras and deep learning to solve the multi-class classification problem and used sample weight capability of Keras in order to have a model that performs more evenly across different classes in order to deal with unbalance dataset.
+
+### Diagnosis prediction using XGB:
+
+In this solution I did some explanatory data analysis and data visualization and used XGBoost model to predict the diagnoses and dealt with imbalanced dataset.
 
 ## NLP Project
 
