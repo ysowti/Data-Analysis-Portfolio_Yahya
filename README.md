@@ -48,7 +48,7 @@ In this solution I used Keras and deep learning to solve the multi-class classif
 
 ### Diagnosis prediction using XGB:
 
-In this solution I did some explanatory data analysis and data visualization that showed how highly imbalaced classes are distributed. I used XGBoost model to predict the diagnoses and deal with the imbalanced dataset. I also used heatmap of normalized confusion matrix to evaluate accuracy of model across different classes that showed by using xgboost model handling imbalanced classes, we could improve accuracy accross different classes with most classes having accuracy higher than 50%.
+In this solution I did some explanatory data analysis and data visualization that showed how highly imbalaced classes are distributed. I used XGBoost model to predict the diagnoses and deal with the imbalanced dataset. I also used heatmap of normalized confusion matrix to evaluate accuracy of model across different classes that showed by using xgboost model handling imbalanced classes, we could improve accuracy accross different classes regardless of them being abundant or small in size.
 
 ## NLP Project
 
