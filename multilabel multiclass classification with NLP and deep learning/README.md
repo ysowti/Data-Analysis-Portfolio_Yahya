@@ -36,13 +36,3 @@ To choose the best threshold value and use it to predict categories in line 29 I
 ### Run the model against the data in testing_data.csv
 
 The file is generated with predictions based on trained and persisted model in the same format as the training data. The file name is yahya_submission_problem_1.csv. The trained model that is used to generate predictions is placed in folder multilabel-LSTM-model in Tensorflow pb format.
-
-
-### What further enhancements to the model would you consider if you were given 
-more time? 
-
-Two things I would like to try if I had more time. 
-
-One is that instead of considering each service name as a text, looking at it as combination of sub-service names and using them as features because these sub-service names get repeated across different instances. Basically, using these sub-service names as categorical features and turning them into vectors that are non-zero only for service names that they are part of. These features can be used in addition to considering each service name as a text that I used.
-
-Second, I would like to try more models like 1D convolution networks, or more variations of LSTM model like using bidirectional RNN that considers sequences in both directions. Also, it would be interesting to see how the model would perform if instead of training embedded vectors, a pretrained embedding like GloVe would be used.
