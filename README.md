@@ -11,7 +11,7 @@ In this project I look at data from stock market, particularly some technology s
 In this data analysis project I am looking at data from 2016 election and analyze two datasets. The first dataset I analyze is the results of aggregated political polls to answer some questions like the party affiliation of people being polled, the effect of undecided polls, change of polls sentiment over time and the effect of debates on polls. The second dataset I use is donors dataset to statistically analyze the donation amount and see how it differs between candidates and parties, trying to find demographics of donors and to find patterns in donation amounts.
 
 
-## 2 - ## 2 - Mulitlabel multiclass classification
+## 2 - Mulitlabel multiclass classification
 
 In this problem we are given set of service names with their corresponding service categories related to beauty services in training data. Each instance with the given service_name is assigned to one or more categories separated by comma in service_category field. As a results, considering that there are one or more than one categories assigned to each service name, this problem is considered multilevel multi class classification. To solve this problem I used NLP and word embedding on the input data and vectorized the output data.
 
