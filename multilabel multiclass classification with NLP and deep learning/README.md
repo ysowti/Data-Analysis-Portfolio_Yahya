@@ -1,4 +1,4 @@
-## MultiLabel Multiclass classification of beauty services
+## MultiLabel Multiclass Classification of Beauty Services
 
 ### Is This a Multi-label Classification Problem:
 
@@ -33,8 +33,7 @@ The metric I used is F1-socre to evaluate performance of trained model on the va
 To choose the best threshold value and use it to predict categories in line 29 I run a loop each time with a different threshold ranging from 0.1 to 0.9 where in each iteration only categories that their predicted probabilities are higher than the threshold are predicted for each instance as 1, the rest predicted as zero. Then, f1-score is measured by comparing the categories predicted in each iteration and the original ones in the validation dataset. The best f1-score that I achieved on the validation set was 0.7244 with precision of 0.7422 and recall of 0.7074 having both higher than 70% with the chosen threshold of 0.3. Increasing or decreasing threshold from 0.3 can increase precision or recall but the overall f1-score goes down.
 
 
-### Run the model against the data in testing_data.csv and provide the results 
-in yourname_ submission_problem_1.csv 
+### Run the model against the data in testing_data.csv
 
 The file is generated with predictions based on trained and persisted model in the same format as the training data. The file name is yahya_submission_problem_1.csv. The trained model that is used to generate predictions is placed in folder multilabel-LSTM-model in Tensorflow pb format.
 
