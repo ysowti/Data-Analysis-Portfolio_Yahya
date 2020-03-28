@@ -52,7 +52,7 @@ In this solution I did some explanatory data analysis and data visualization tha
 In This project I use Attention mechanism and LSTM to perform sentiment analysis to detect emotions in a text. The idea is to present a text that will be classified as specific type of emotion based on different classes that represent different types of emotions. In this approach using attention mechanism I try to identify main words in each text that can be associated with a specific type of emotion. This notebook is run in Google Colab with hardware accelerator chosen to be GPU. The data I work with in this project is 'emotion.csv' that contains text in each row and an emotion associated with that text.
 
 
-## 5 - Delivery Duration Prediction:
+## 5 - Delivery Duration Prediction
 
 In this project I used machine learning modeling to predict the expected delivery duration in seconds. The whole process includes data preprocessing and cleaning, some feature engineering, modeling, evaluation of prediction on a holdout set called validation set, and finally generating predictions for the given test set. Validation set is randomly selected from historical data for which the generated prediction is evaluated based on Mean Absolute Error (MAE) that shows average magnitude of error.
 
