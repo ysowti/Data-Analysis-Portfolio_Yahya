@@ -1,4 +1,4 @@
-# Report on Delivery Duration Prediction Data Science Project
+# Report on Delivery Duration Prediction Project
 
 ## High Level Summary
 
