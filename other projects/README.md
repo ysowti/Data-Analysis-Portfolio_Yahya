@@ -1,4 +1,4 @@
-# Data Science Portfolio
+# Other Projects
 
 ## 1 - Detect Cardiologists
 
