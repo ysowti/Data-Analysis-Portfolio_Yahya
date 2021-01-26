@@ -37,6 +37,12 @@ In this solution I used Keras and deep learning to solve the multi-class classif
 
 In this solution I did some explanatory data analysis and data visualization that showed how highly imbalaced classes are distributed. I used XGBoost model to predict the diagnoses and deal with the imbalanced dataset. I also used heatmap of normalized confusion matrix to evaluate accuracy of model across different classes that showed by using xgboost model handling imbalanced classes, we could improve accuracy accross different classes regardless of them being abundant or small in size.
 
-## 3 - Sentiment Analysis using NLP and Deep Learning
+
+## 3 - Spark Deep Learning Pipeline:
+
+In this project I prototyped a spark pipeline integrated with TensorFlow Keras deep learning framework. In order to do this integration I used a python library and an extension to Keras called Elephas. The goal was to build a model in TensorFlow.Keras framework and to create a pipeline on spark that can run this model using Elephas estimator in order to leverage the distributed analytic engine of Spark. The whole process of data ingestion and transformation is automated that includes selection of numeric and categorical features, scaling numerical features, transforming categorical features, with all steps formed into stages of Spark Pipeline. I ran the whole pipeline on typical bank data but it can run on any tabular data, and do all the data ingestion and transformation, feature engineering, model training and deployment and evaluation on validation and test data. I ran this entire project using Google Colab to build a prototype for an upcoming data science projects where the data will be massive. This allows me to do my data ingestion, pipelining, training and deployment on a unified platform and on a much larger Spark cluster.
+
+
+## 4 - Sentiment Analysis using NLP and Deep Learning
 
 In This project I use Attention mechanism and LSTM to perform sentiment analysis to detect emotions in a text. The idea is to present a text that will be classified as specific type of emotion based on different classes that represent different types of emotions. In this approach using attention mechanism I try to identify main words in each text that can be associated with a specific type of emotion. This notebook is run in Google Colab with hardware accelerator chosen to be GPU. The data I work with in this project is 'emotion.csv' that contains text in each row and an emotion associated with that text.
