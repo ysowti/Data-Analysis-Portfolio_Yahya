@@ -1,17 +1,7 @@
 # Data Science Portfolio
 
-## 1 - Data Analysis Projects
 
-### Stock Market Analysis
-
-In this project I look at data from stock market, particularly some technology stocks. I use pandas to get stock information, visualize different aspects of it, and finally look at a few ways of analyzing the risk of a stock, based on its previous performance history. I also predict future stock prices through Monte Carlo method.
-
-### 2016 Presidential Election Data Analysis
-
-In this data analysis project I am looking at data from 2016 election and analyze two datasets. The first dataset I analyze is the results of aggregated political polls to answer some questions like the party affiliation of people being polled, the effect of undecided polls, change of polls sentiment over time and the effect of debates on polls. The second dataset I use is donors dataset to statistically analyze the donation amount and see how it differs between candidates and parties, trying to find demographics of donors and to find patterns in donation amounts.
-
-
-## 2 - Mulitlabel multiclass classification with Deep Learning
+## 1 - Mulitlabel multiclass classification with Deep Learning
 
 In this problem we are given a set of service names with their corresponding service categories related to beauty services in training data. Each instance with the given service_name is assigned to one or more categories separated by comma in service_category field. As a results, considering that there are one or more than one categories assigned to each service name, this problem is considered multilabel multiclass classification. To solve this problem I used NLP and word embedding on the input data after preprocessing and vectorized the output data, that then used to trained stacked LSTM model for classification.
 
@@ -28,7 +18,7 @@ The metric I used is micro averaged F1-socre to evaluate performance of trained 
 Using the model that is trained base on all of training data, predictions are generated on testing data. After adding these predicted multilabel categories to the service names given in testing data, a new file called testing_data_with_predictions.csv is created. The trained model that is used to generate predictions is placed in folder multilabel-LSTM-model and stored in Tensorflow pb format.
 
 
-## 3 - Diagnosis Problem
+## 2 - Diagnosis Problem
 
 In this problem, the goal is to build a ML model that predicts diagnosis based on symptoms and other factors. As input csv file we have data_challenge.csv that contains a number of medical cases (extracted from EHRs). Each entry consists of:
 
@@ -47,15 +37,6 @@ In this solution I used Keras and deep learning to solve the multi-class classif
 
 In this solution I did some explanatory data analysis and data visualization that showed how highly imbalaced classes are distributed. I used XGBoost model to predict the diagnoses and deal with the imbalanced dataset. I also used heatmap of normalized confusion matrix to evaluate accuracy of model across different classes that showed by using xgboost model handling imbalanced classes, we could improve accuracy accross different classes regardless of them being abundant or small in size.
 
-## 4 - Sentiment Analysis using NLP and Deep Learning
+## 3 - Sentiment Analysis using NLP and Deep Learning
 
 In This project I use Attention mechanism and LSTM to perform sentiment analysis to detect emotions in a text. The idea is to present a text that will be classified as specific type of emotion based on different classes that represent different types of emotions. In this approach using attention mechanism I try to identify main words in each text that can be associated with a specific type of emotion. This notebook is run in Google Colab with hardware accelerator chosen to be GPU. The data I work with in this project is 'emotion.csv' that contains text in each row and an emotion associated with that text.
-
-
-## 5 - Delivery Duration Prediction
-
-In this project I used machine learning modeling to predict the expected delivery duration in seconds. The whole process includes data preprocessing and cleaning, some feature engineering, modeling, evaluation of prediction on a holdout set called validation set, and finally generating predictions for the given test set. Validation set is randomly selected from historical data for which the generated prediction is evaluated based on Mean Absolute Error (MAE) that shows average magnitude of error.
-
-Preprocessing and data cleaning step in addition to dealing with missing values, involves removing some data points based on anomalous values found in target value (delivery duration) as well as some key features like total items. At the end this proves to have a very critical impact on improving MAE by close to 10%. In addition to using the list of provided features, I also added three features, one that is derived from two given features and two that are time related features. A side analysis I did with modeling without using these additional features shows that engineering these features helps to improve the overall MAE by over 5%. A comprehensive exploratory analysis is also included that shows how different features are correlated and related to the target value.
-
-In modeling I used an ensemble model that is average of predictions generated by a three-layer dense neural network model as well as a XGBoost regressor model that are trained on the provided historical data. Evaluation of both models showed very close results on validation set, that prompted me to come up with an ensemble model based on the average of their predictions in order to use strength of both models meanwhile alleviating some of their weaknesses. Generated prediction on validation set based on this ensemble model results in MAE of about 636 that is lower than MAE obtained by each one of those models. That means, with delivery duration of average of 2860 seconds (47 mins), the generated prediction has average magnitude of error of about 10 minutes that gives a margin of error of about 22%. Finally, after some preprocessing, by using the ensemble model, predictions are generated for the test set and stored into a csv file called “yahya_predicted_data.csv”.
